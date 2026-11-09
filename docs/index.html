@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estudio para Windows: descarga</title>
+<meta name="description" content="Descarga Estudio para Windows 10 y 11. Instalación sin administrador, huella SHA-256 y guía para el aviso de SmartScreen.">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header class="cabecera">
+  <a class="marca" href="./">Estudio</a>
+  <nav aria-label="Secciones">
+    <a href="#verificar">Comprobar descarga</a>
+    <a href="#aviso">Aviso de Windows</a>
+    <a href="#requisitos">Requisitos</a>
+    <a href="avisos-terceros.txt">Licencias</a>
+  </nav>
+</header>
+
+<main>
+<section class="portada" aria-labelledby="titulo">
+  <div class="portada-texto">
+    <h1 id="titulo">Crea tus vídeos explicativos en tu propio ordenador</h1>
+    <p>Estudio escribe el guion, pone la voz, anima las escenas y monta el vídeo. Todo funciona en tu equipo con Windows y no necesita permisos de administrador.</p>
+    <p class="descarga">
+      <a id="boton" class="boton" href="https://github.com/HoracioMartinez17/estudio-descargas/releases/download/v0.3.2/Estudio-Setup-0.3.2.exe">Descargar Estudio <span id="v-etiqueta">0.3.2</span></a>
+      <span class="detalle"><span id="v-tamano">369 MB</span>, instalador para Windows 10 y 11 de 64 bits</span>
+    </p>
+  </div>
+
+  <div class="pista" aria-hidden="true">
+    <div class="regla"></div>
+    <div class="clip clip-a">guion</div>
+    <div class="clip clip-b">voz</div>
+    <div class="clip clip-c">animación</div>
+    <div class="clip clip-d">montaje</div>
+    <div class="cabezal"></div>
+  </div>
+</section>
+
+<section id="verificar" class="bloque" aria-labelledby="h-verificar">
+  <h2 id="h-verificar">Comprueba que la descarga es la original</h2>
+  <p>La huella SHA-256 identifica el archivo. Si la tuya es distinta, no lo ejecutes y vuelve a descargarlo.</p>
+  <div class="huella">
+    <code id="sha" tabindex="0">795109139dd27bb0966fa31bfe3f54ff2b8d54d06d2a00d9d1bef2e061181e9d</code>
+    <button type="button" id="copiar">Copiar huella</button>
+  </div>
+  <p class="pie">Para calcular la tuya, abre PowerShell en la carpeta de descargas y escribe:</p>
+  <pre><code id="comando">Get-FileHash .\Estudio-Setup-0.3.2.exe -Algorithm SHA256</code></pre>
+</section>
+
+<section id="aviso" class="bloque" aria-labelledby="h-aviso">
+  <h2 id="h-aviso">Si Windows dice «Windows protegió su PC»</h2>
+  <p>El instalador aún no lleva firma digital de editor, así que SmartScreen lo muestra como aplicación poco habitual. No indica que contenga un virus: se resuelve en dos clics.</p>
+  <ol class="pasos">
+    <li>
+      <div class="ventana" role="img" aria-label="Ventana azul de SmartScreen con el enlace Más información marcado">
+        <div class="ventana-barra">Windows protegió su PC</div>
+        <div class="ventana-cuerpo">
+          <p>Microsoft Defender SmartScreen impidió el inicio de una aplicación no reconocida.</p>
+          <span class="enlace marcado">Más información</span>
+          <span class="boton-falso inactivo">No ejecutar</span>
+        </div>
+      </div>
+      <p><strong>Pulsa «Más información».</strong> Es un enlace de texto, no un botón, en el centro de la ventana.</p>
+    </li>
+    <li>
+      <div class="ventana" role="img" aria-label="Ventana de SmartScreen con el botón Ejecutar de todas formas marcado">
+        <div class="ventana-barra">Windows protegió su PC</div>
+        <div class="ventana-cuerpo">
+          <p>Aplicación: Estudio-Setup-0.3.2.exe<br>Editor: Editor desconocido</p>
+          <span class="boton-falso marcado">Ejecutar de todas formas</span>
+          <span class="boton-falso inactivo">No ejecutar</span>
+        </div>
+      </div>
+      <p><strong>Pulsa «Ejecutar de todas formas».</strong> Antes comprueba que el nombre del archivo es el que descargaste de esta página.</p>
+    </li>
+  </ol>
+  <p class="pie">¿No aparece el aviso? Entonces tu Windows no lo necesita y el instalador se abre directamente.</p>
+</section>
+
+<section id="requisitos" class="bloque" aria-labelledby="h-req">
+  <h2 id="h-req">Requisitos</h2>
+  <dl class="requisitos">
+    <div><dt>Sistema</dt><dd>Windows 10 o Windows 11, 64 bits.</dd></div>
+    <div><dt>Permisos</dt><dd>No hacen falta. Se instala en tu carpeta de usuario.</dd></div>
+    <div><dt>Espacio</dt><dd>Unos 1 GB para el programa. Los componentes opcionales se descargan después desde Ajustes: Remotion unos 1,5 GB, Whisper unos 0,7 GB y la voz Qwen3-TTS unos 8 GB.</dd></div>
+    <div><dt>Conexión</dt><dd>Solo para instalar los componentes y para buscar actualizaciones.</dd></div>
+    <div><dt>Tarjeta gráfica</dt><dd>La voz Qwen3-TTS necesita una GPU NVIDIA. Sin ella, Estudio te avisa y puedes usar otra voz.</dd></div>
+  </dl>
+</section>
+
+<section class="bloque" aria-labelledby="h-lic">
+  <h2 id="h-lic">Licencias y avisos</h2>
+  <p>Estudio incluye software de terceros, entre ellos FFmpeg bajo GPLv3. <a href="avisos-terceros.txt">Lee los avisos de licencias</a>; también están dentro del programa, en Ajustes, en Versión.</p>
+  <p class="pie">Esta página solo aloja el instalador. Las actualizaciones se descargan desde aquí, desde Ajustes, con la misma huella.</p>
+</section>
+</main>
+
+<footer class="pie-pagina">
+  <span>Versión <span id="v-pie">0.3.2</span></span>
+  <a href="https://github.com/HoracioMartinez17/estudio-descargas/releases">Todas las versiones</a>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

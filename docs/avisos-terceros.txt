@@ -1,0 +1,140 @@
+ESTUDIO - AVISOS DE SOFTWARE DE TERCEROS
+========================================
+Estudio incluye y/o descarga software de terceros. Aqui estan sus licencias y atribuciones.
+Las licencias completas estan en la carpeta  licencias-terceros\  junto a este archivo.
+
+1. PACK DE ESTILOS: BLACKDARK REELS (incluido)
+----------------------------------------------
+Blackdark Reels (c) 2026 Blackdark - https://blackdark.club - todos los derechos reservados.
+Se distribuye con Estudio con permiso de su autor. Su licencia esta en backend\blackdark-reels\LICENCIA.md.
+Los videos que crees con el pack son tuyos; el pack en si no se puede revender ni publicar por separado.
+Puedes eliminar cualquier recurso desde Biblioteca > Material.
+
+2. FFMPEG (incluido, carpeta ffmpeg\)
+--------------------------------------
+Compilacion "full" de Gyan Doshi (https://www.gyan.dev/ffmpeg/builds/), version 9.0.2-full_build-www.gyan.dev.
+Licencia: GNU GPL version 3 (incluye x264, x265 y otras bibliotecas). Texto completo: licencias-terceros\ffmpeg\LICENSE.
+Se ejecuta como programa independiente (Estudio no lo enlaza ni lo modifica).
+Codigo fuente correspondiente: https://ffmpeg.org/download.html (FFmpeg 9.0.2-full_build-www.gyan.dev) y las instrucciones de
+compilacion de la build en https://www.gyan.dev/ffmpeg/builds/ . Tambien puedes pedirlo por escrito a quien te
+entrego Estudio y se te facilitara durante al menos tres anos.
+Si lo prefieres, puedes sustituir ffmpeg\ffmpeg.exe y ffprobe.exe por tu propia build compatible.
+
+3. NODE.JS (incluido, node\node.exe)
+-------------------------------------
+Licencia MIT (c) Node.js contributors - https://github.com/nodejs/node/blob/main/LICENSE
+
+4. PYTHON, PYINSTALLER Y LIBRERIAS DE PYTHON (incluidos en Estudio.exe y backend\)
+----------------------------------------------------------------------------------
+Python: Python Software Foundation License. PyInstaller: GPL v2 con excepcion que permite distribuir
+aplicaciones congeladas bajo cualquier licencia. Librerias empaquetadas (version y licencia):
+  - annotated-doc 0.0.5: MIT
+  - annotated-types 0.8.0: MIT
+  - anyio 4.16.0: MIT
+  - audioop-lts 0.2.2: PSF-2.0
+  - brotli 1.2.1: MIT
+  - certifi 2026.10.23: Mozilla Public License 2.0 (MPL 2.0)
+  - cffi 2.1.1: MIT-0
+  - charset-normalizer 3.5.2: MIT
+  - click 8.5.0: BSD-3-Clause
+  - colorama 0.4.6: BSD License
+  - cryptography 50.0.2: Apache-2.0 OR BSD-3-Clause
+  - fastapi 0.162.0: MIT
+  - filelock 4.2.9: MIT
+  - fsspec 2026.9.0: BSD-3-Clause
+  - gradio 6.17.3: Apache-2.0
+  - gradio_client 2.5.0: Apache-2.0
+  - greenlet 3.5.6: MIT AND PSF-2.0
+  - groovy 0.1.2: MIT License
+  - h11 0.16.0: MIT License
+  - hf-gradio 0.4.1: MIT
+  - httpcore 1.0.9: BSD-3-Clause
+  - httpx 0.28.1: BSD License
+  - huggingface_hub 0.36.2: Apache Software License
+  - idna 3.20: BSD-3-Clause
+  - iniconfig 2.3.1: MIT
+  - Jinja2 3.1.6: BSD License
+  - markdown-it-py 4.2.0: MIT License
+  - MarkupSafe 3.0.4: BSD-3-Clause
+  - mdurl 0.1.2: MIT License
+  - numpy 2.5.4: BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0
+  - opentelemetry-api 1.45.2: Apache-2.0
+  - orjson 3.13.0: MPL-2.0 AND (Apache-2.0 OR MIT)
+  - packaging 26.3: Apache-2.0 OR BSD-2-Clause
+  - pandas 3.1.1: BSD-3-Clause
+  - pillow 12.3.0: MIT-CMU
+  - playwright 1.64.1: Apache-2.0
+  - pluggy 1.7.0: MIT License
+  - psutil 7.2.2: BSD-3-Clause
+  - pydantic 2.14.3: MIT
+  - pydantic_core 2.50.4: MIT
+  - pydub 0.25.1: MIT License
+  - pyee 14.0.0: MIT License
+  - Pygments 2.21.0: BSD-2-Clause
+  - pytest 9.2.0: MIT
+  - python-dateutil 4.0.0: BSD-3-Clause
+  - python-multipart 0.0.33: Apache-2.0
+  - pytz 2026.6: MIT License
+  - PyYAML 6.0.3: MIT License
+  - requests 2.34.2: Apache Software License
+  - rich 15.0.0: MIT License
+  - safehttpx 0.1.7: MIT License
+  - safetensors 0.8.0: Apache Software License
+  - semantic-version 2.10.0: BSD License
+  - setuptools 84.2.1: MIT
+  - shellingham 1.5.4: ISC License (ISCL)
+  - starlette 1.10.0: BSD-3-Clause
+  - threadpoolctl 3.7.0: BSD-3-Clause
+  - tomlkit 0.14.0: MIT License
+  - tqdm 4.70.1: MPL-2.0 AND MIT
+  - typer 0.27.3: MIT
+  - typing-inspection 0.4.5: MIT
+  - typing_extensions 4.16.0: PSF-2.0
+  - tzdata 2026.6: Apache-2.0
+  - urllib3 2.8.0: MIT
+  - uvicorn 0.54.0: BSD-3-Clause
+
+5. LIBRERIAS DE LA INTERFAZ (incluidas en frontend\)
+----------------------------------------------------
+  - @edge-runtime/cookies 5.0.0: MIT
+  - @edge-runtime/ponyfill 3.0.0: MIT
+  - @edge-runtime/primitives 5.0.0: MIT
+  - @next/env 14.2.35: MIT
+  - @swc/helpers 0.5.5: Apache-2.0
+  - busboy 1.6.0: MIT
+  - caniuse-lite 1.0.30001822: CC-BY-4.0
+  - client-only 0.0.1: MIT
+  - graceful-fs 4.2.11: ISC
+  - nanoid 3.3.20: MIT
+  - next 14.2.35: MIT
+  - picocolors 1.1.1: ISC
+  - postcss 8.4.31: MIT
+  - react 18.3.1: MIT
+  - react-dom 18.3.1: MIT
+  - react-is 18.2.0: MIT
+  - react-refresh 0.12.0: MIT
+  - regenerator-runtime 0.13.4: MIT
+  - scheduler 0.23.2: MIT
+  - source-map-js 1.2.2: BSD-3-Clause
+  - streamsearch 1.1.0: MIT
+  - styled-jsx 5.1.1: MIT
+
+6. TIPOGRAFIAS
+--------------
+Fraunces, Inter, JetBrains Mono, Big Shoulders e Instrument Sans: SIL Open Font License 1.1 (uso y
+redistribucion libres). Textos de licencia junto a las fuentes (backend\tools\studio\static\fonts y
+backend\blackdark-reels\guia\fuentes).
+
+7. COMPONENTES QUE ESTUDIO DESCARGA EN TU EQUIPO (no se distribuyen con el instalador)
+-------------------------------------------------------------------------------------
+Se descargan desde Ajustes > Componentes, directamente de sus autores, y se rigen por su propia licencia:
+- Remotion (render de video): Remotion License (https://github.com/remotion-dev/remotion/blob/main/LICENSE.md).
+  GRATIS para personas, organizaciones sin animo de lucro y empresas de hasta 3 empleados, tambien para uso
+  comercial. Las empresas de mas de 3 empleados necesitan una Company License: https://www.remotion.pro/license
+  Eres tu quien la acepta al instalar Remotion.
+- Node.js 22 portable: MIT. Chrome headless de Remotion (Chrome for Testing): licencias de Chromium y terminos de
+  Google. Dependencias npm de Remotion: sus licencias (mayoritariamente MIT) se instalan junto a ellas.
+- Whisper (faster-whisper, MIT) y el modelo Systran/faster-whisper-small (MIT, basado en OpenAI Whisper, MIT).
+- Qwen3-TTS: codigo qwen-tts y modelo Qwen/Qwen3-TTS-12Hz-1.7B-Base bajo Apache License 2.0 (Alibaba/Qwen).
+- PyTorch (BSD-3-Clause) y Python embebido (PSF) para los dos anteriores.
+- Si usas ElevenLabs, Gemini u otros servicios en la nube, se rigen por sus terminos y por tus claves.

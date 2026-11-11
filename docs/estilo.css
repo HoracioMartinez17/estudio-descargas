@@ -53,6 +53,8 @@ h1 em { font-style: normal; color: var(--neon); }
 .boton:hover { background: var(--negro); color: var(--neon); }
 .boton:active { transform: translateY(1px); }
 .detalle { color: var(--gris); font-size: 13px; }
+.alterna { margin-top: 1rem; color: var(--gris); font-size: 14px; }
+.alterna a { color: inherit; text-decoration: underline; }
 
 /* Pista de montaje: el cabezal recorre los cuatro pasos una sola vez al cargar */
 .pista { position: relative; height: 15rem; background: var(--capa); border: 1px solid var(--linea-fuerte); padding: 2.75rem 1rem 1rem; overflow: hidden; }
